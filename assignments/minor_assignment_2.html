@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potato Company Form</title>
+</head>
+<body style="margin: 20px;">
+    <img src="../assets/potato.png" alt="Potato Company" width="100">
+    <h1 style="color: darkgoldenrod;">Potato Company</h1>
+    <h2 style="color: burlywood;">Application Form for Data Scientist Role</h2>
+    <hr>
+    <form action="">
+        <h2 style="color: brown;">Personal Details</h2>
+        <div>
+            <h3><label for="name">Name: </label></h3>
+            <input style="padding: 10px;" type="text" id="name" placeholder="Enter Name" name="name" required>
+        </div>
+        <div>
+            <h3><label for="address">Address: </label></h3>
+            <input style="padding: 10px;" type="text" id="address" placeholder="Enter Address" name="address" required>
+        </div>
+        <div>
+            <h3><label for="phone">Phone: </label></h3>
+            <input style="padding: 10px;" type="number" id="phone" placeholder="Enter Phone" name="phone" required minlength="10" maxlength="10">
+        </div>
+        <div>
+            <h3><label for="name">Email: </label></h3>
+            <input style="padding: 10px;" type="email" id="email" placeholder="Enter Email" name="email" required>
+        </div>
+        <div>
+            <h3><label for="age">Age: </label></h3>
+            <input style="padding: 10px;" type="number" id="age" placeholder="Enter Age" name="age" min="20" required>
+        </div>
+        <div>
+            <h3>Gender: </h3>
+            <label for="male">Male </label>
+            <input style="padding: 10px;" type="radio" id="male" name="gender" required>
+            <label for="female">Female </label>
+            <input style="padding: 10px;" type="radio" id="female" name="gender" required>
+        </div>
+        <div>
+            <h3>Attach CV:</h3>
+            <input style="padding: 10px;" type="file" id="file" name="file" required>
+        </div>
+        <hr>
+        <h2 style="color: brown;">Checks</h2>
+        <div>
+            <h3>Agree to Terms and Conditions of the Company:</h3>
+            <input style="padding: 10px;" type="checkbox" id="checkbox1" name="checkbox" required>
+            <label for="checkbox1">You will work on the potato field farming potatoes all day and night.</label>
+            <br>
+            <input style="padding: 10px;" type="checkbox" id="checkbox2" name="checkbox" required>
+            <label for="checkbox2">You will collect potato data and analyze it for betterment of potato.</label>
+            <br>
+            <input style="padding: 10px;" type="checkbox" id="checkbox3" name="checkbox" required>
+            <label for="checkbox3">You will not steal any potato however can steal data if you want.</label>
+            <h3>Final Check:</h3>
+            <input style="padding: 10px;" type="checkbox" id="checkbox4" name="checkbox" required>
+            <label for="checkbox4">All filled data is true to my knowledge.</label>
+        </div>
+        <hr>
+        <div>
+            <input style="padding: 10px;" type="submit">
+            <input style="padding: 10px;" type="reset">
+        </div>
+    </form>
+</body>
+</html>
