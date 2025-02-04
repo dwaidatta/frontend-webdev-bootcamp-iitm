@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="a">
+        <div class="e f">F</div>
+        <div class="e g">G</div>
+        <div class="e h">H</div>
+        <div class="e i">I</div>
+    </div>
+</body>
+</html>
+
+<style>
+    .e{
+        width: 64px;
+        height: 64px;
+        border-style: solid;
+        margin: 40px;
+        background-color: antiquewhite;
+    }
+    .f{
+        transition-property: transform;
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 1s;
+        transform: translateX(200px);
+    }
+    .g{
+        transform: rotate(45deg);
+    }
+
+    .h{
+        animation-name: apple;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0.5s;
+        animation-direction: reverse;
+    }
+
+    @keyframes apple {
+        from{
+
+        }
+        to{
+            transform: translateX(300px);
+        }
+    }
+
+    @media only screen and (max-width:500px) {
+        body{
+            background-color: lightpink;
+        }
+        .a{
+            display: flex;
+        }
+    }
+</style>

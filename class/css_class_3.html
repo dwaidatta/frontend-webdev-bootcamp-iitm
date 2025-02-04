@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="a">
+        <div class="b">1</div>
+        <div class="c">2</div>
+        <div class="d">3</div>
+        <div class="e">4</div>
+    </div>
+    <div class="d1">
+        <p class="p1">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, nostrum, iure voluptates necessitatibus ab voluptatibus laboriosam tempora tempore modi, dignissimos illo ratione accusantium porro harum perspiciatis dolorem fuga est dolorum fugit hic quam. Officiis dignissimos ab totam magni, iusto vero, delectus nemo atque minus aliquid et dolorum officia alias odio ad eius quas ut quam nesciunt aspernatur nisi excepturi laborum voluptas accusamus? Distinctio modi quis nemo deserunt quae, nulla enim laborum. Sed sunt libero voluptatibus dicta ratione rem molestias nobis blanditiis totam deserunt corporis impedit quia, officia cum, aspernatur animi? Maxime doloribus nam tempore enim earum tempora minus id! Quod cumque a, fugiat asperiores quae dolorem voluptatem vitae iste inventore commodi. Nulla iste consequatur sequi nostrum dignissimos ipsum asperiores veniam, deserunt voluptates laboriosam quibusdam dolore quasi, hic voluptatum optio aspernatur eveniet explicabo corporis eos totam maiores illum unde similique! Cumque quod odit illo pariatur doloribus minima quaerat, alias voluptas quam omnis, iure distinctio veniam nihil reprehenderit hic non debitis esse dolore iste eveniet nisi rerum. Cum obcaecati veritatis voluptate, modi exercitationem ut, vero tempora sunt consequuntur inventore labore fuga aspernatur tempore. Nihil optio reprehenderit dignissimos libero et aliquid nam cupiditate id debitis, laborum maiores rem nobis perferendis? Alias, enim nam!
+        </p>
+    </div>
+    <div class="g1">
+
+    </div>
+</body>
+</html>
+
+<style>
+    /* defining variables using root */
+    :root{
+        --rd:rgb(49, 186, 156);
+        --bk:black;
+    }
+    div{
+        margin: 10px;
+    }
+    .a{
+        border-style: solid;
+        width: 500px;
+        height: 600px;
+        /* display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse; */
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px;
+        grid-template-areas:    "nav nav nav"
+                                "side empty jam"
+                                "feet feet feet";
+        justify-items: center;
+        align-items: center;                        
+        row-gap: 100px;
+        column-gap: 100px;                        
+    }
+
+    /* x - justify(content, item, self) */
+    /* y - align(content, item, self) */
+
+    .b{
+        border-style: solid;
+        border-color: var(--bk);
+        /* width: 40px; */
+        height: 40px;
+        background-color: var(--rd);
+        /* display: none;  */
+        /* removes element */
+        /* visibility:hidden; */
+        /* hides element */
+        grid-area: feet;
+    }
+    .c{
+        border-style: solid;
+        /* width: 50px; */
+        height: 50px;
+        border-color: var(--bk);
+        background-color: var(--rd);
+        grid-area: nav;
+    }
+    .d{
+        border-style: solid;
+        width: 60px;
+        height: 60px;
+        border-color: var(--bk);
+        background-color: var(--rd);
+        /* grid-row-start: 1;
+        grid-row-end: 2; */
+        /* grid-row: 1/2;
+        grid-column: 2/4; */
+        grid-area: side;
+    }
+    .e{
+        border-style: solid;
+        width: 70px;
+        height: 70px;
+        border-color: var(--bk);
+        background-color: var(--rd);
+        /* grid-row: 1/2;
+        grid-column: 2/4; */
+        grid-area: jam;
+    }
+
+    .d1{
+        font-size: 6px;
+    }
+    .p1{
+        /* font-size: 2em; */
+        /* 2x font size of parent d1 */
+        font-size: 2rem;
+        /* 2x font size of body */
+    }
+</style>
