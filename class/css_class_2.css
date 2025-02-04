@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Poppins";
+}
+.a {
+  color: burlywood;
+}
+.a:hover {
+  text-decoration: underline;
+  color: white;
+  background-color: rgb(120, 110, 5);
+  cursor: wait;
+}
+.img1 {
+  float: right;
+  min-height: 30vw;
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 2px;
+  width: 25vw;
+  padding: 10px;
+  margin: 10px 0;
+}
+.video1 {
+  width: 300px;
+  border-radius: 20px;
+}
+.img1:hover {
+  border-style: dotted;
+  border-color: brown;
+}
+
+.l1 {
+  list-style-type: circle;
+}
+.l1:hover {
+  background-color: blanchedalmond;
+}
+.l2 {
+  list-style-type: square;
+}
+.l3 {
+  list-style-type: none;
+}
+.l4 {
+  list-style-type: lower-alpha;
+}
+.l4:hover {
+  box-shadow: 10px 10px 4px gray;
+}
+
+.g1 {
+  border-style: solid;
+  padding: 10px;
+}
+/* pseudo classes */
+a:hover {
+  color: pink;
+}
+a:visited {
+  color: green;
+}
+a:link {
+  color: red;
+}
+
+/* combinators */
+
+/* descendant selector */
+div p {
+  background-color: beige;
+  color: orange;
+}
+
+/* child selector */
+div > p {
+  color: brown !important;
+}
+
+/* adjacent sibling selector */
+div + p {
+  text-decoration: underline;
+}
+
+/* general selector */
+div ~ p {
+  background-color: azure;
+}
+
+.mapple {
+  width: min(50%, 200px);
+  height: 400px;
+  border-style: solid;
+  overflow: scroll;
+}
+.apple {
+  width: calc(100% - 40px);
+}
