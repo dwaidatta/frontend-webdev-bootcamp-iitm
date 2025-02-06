@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruitment Form</title>
+    <link rel="stylesheet" href="css_minor_2.css">
+</head>
+<body>
+    <div class="company">
+        <img src="../assets/potato-basket.svg" alt="">
+        <h1>
+            Potato Company
+        </h1>
+        <p>
+            A place for innovation and potato.
+        </p>
+    </div>
+    <div class="main">
+        <div class="role-heading">
+            <h2>Apply for Data Scientist Role</h2>
+        </div>
+        <form action="">
+            <div class="h2-heading">
+                <h2>Fill Your Details</h2>
+            </div>
+            <div class="personal-details">
+                <div class="inp1">
+                    <p>
+                        Name
+                    </p>
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="inp1">
+                    <p>
+                        Phone Number
+                    </p>
+                    <input type="number" placeholder="Phone Number" min="1000000000" max="9999999999" required>
+                </div>
+                <div class="inp1">
+                    <p>
+                        Email Address
+                    </p>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="inp1">
+                    <p>
+                        Address
+                    </p>
+                    <input type="text" placeholder="Your Address" required>
+                </div>
+                <div class="inp1">
+                    <p>
+                        Date Of Birth
+                    </p>
+                    <input type="date" required>
+                </div>
+                <div class="inp2">
+                    <p>
+                        Gender
+                    </p>
+                    <div class="radio-inp">
+                        <input type="radio" name="gender" id="male" required>
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="radio-inp">
+                        <input type="radio" name="gender" id="female" required>
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+                <div class="inp3">
+                    <p>
+                        Attach CV
+                    </p>
+                    <input type="file" required>
+                </div>
+            </div>
+            <div class="h2-heading">
+                <h2>
+                    Terms & Conditions
+                </h2>
+            </div>
+            <div class="terms">
+                <div class="term-desc">
+                    <input type="checkbox" name="t1" required>
+                    <label for="t1">You will work on the potato field farming potatoes all day and night.</label>
+                </div>
+                <div class="term-desc">
+                    <input type="checkbox" name="t2" required>
+                    <label for="t2">You will collect potato data and analyze it for betterment of potato.</label>
+                </div>
+                <div class="term-desc">
+                    <input type="checkbox" name="t3" required>
+                    <label for="t3">You will not steal any potato however can steal data if you want.</label>
+                </div>
+                <div class="term-desc">
+                    <input type="checkbox" name="t4" required>
+                    <label for="t4">All filled data is true to my knowledge failing which I shall be liable to a fine of ten potatoes.</label>
+                </div>
+            </div>
+            <div class="h2-heading">
+                <h2>
+                    Final Submit
+                </h2>
+            </div>
+            <div class="form-buttons">
+                    <input type="submit">
+                    <input type="reset">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

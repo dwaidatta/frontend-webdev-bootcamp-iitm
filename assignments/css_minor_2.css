@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+:root{
+    --potato-border: #BB8F00;
+    --potato-text: #483700;
+    --potato-bg-1: antiquewhite;
+    --potato-bg-2: rgb(255, 253, 245);
+    --potato-bg-3: blanchedalmond;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "DM Mono", serif;
+}
+.main{
+    color: var(--potato-text);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto ;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    background-color: var(--potato-bg-3);
+    margin: 40px 20px;
+}
+.company{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+.company img{
+    width: 100px;
+    margin: auto;
+}
+.company h1, p{
+    margin: auto;
+    color: var(--potato-text);
+}
+.role-heading{
+    margin: 10px 0 0;
+    text-decoration: underline;
+}
+.h2-heading{
+    margin: 40px 0 20px;
+    color: var(--potato-text);
+}
+.personal-details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.inp1 input{
+    all: unset;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 4px;
+    border-color: var(--potato-border);
+    color: var(--potato-text);
+    padding: 10px 10px;
+    width: 300px;
+    background-color: var(--potato-bg-2);
+}
+.inp1 p{
+    margin-bottom: 4px;
+}
+.inp2 p{
+    margin-bottom: 4px;
+}
+.radio-inp{
+    display: flex;
+    gap: 10px;
+    color: var(--potato-text);
+}
+.inp3 p{
+    margin-bottom: 4px;
+}
+.inp3 input{
+    all: unset;
+}
+.terms{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    margin: auto;
+}
+.term-desc{
+    display: flex;
+    flex-direction: row;
+    gap: 11px;
+    align-items: center;
+}
+.form-buttons{
+    display: flex;
+    gap: 20px;
+}
+.form-buttons input{
+    all: unset;
+    border-radius: 4px;
+    color: var(--potato-bg-2);
+    background-color: var(--potato-text);
+    padding: 10px 40px;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+
+
+
