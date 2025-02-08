@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        You quitted :D
+    </p>
+</body>
+</html>
+
+<script>
+    var tasklist = [];
+    
+    while (true){
+        var task = "";
+        var act = prompt("TO DO LIST\n\n- add\n- view\n- remove\n- quit\n\nEnter action name").toLowerCase();
+
+        if (act == "add"){
+            task = prompt("TO DO LIST\n\nEnter task name to add");
+            tasklist.push(task.toLowerCase());
+            alert("Added: " + task);
+        }
+        else if (act == "view"){
+            var l = tasklist.length;
+            var s ="TO DO LIST\n"
+            if (l!=0){
+                for(x=0;x<l;x++){
+                    s += "\n" + tasklist[x];
+                }
+            }
+            else{
+                s += "\n...\n...\n...\n\nMaybe add some tasks?"
+            }
+            alert(s)
+        }
+        else if (act == "remove"){
+            var l = tasklist.length;
+            var index = -1;
+            if (l!=0){
+                task = prompt("TO DO LIST\n\nEnter task name to remove\n\n" + tasklist).toLowerCase();
+
+                for(x=0;x<l;x++){
+                    if (task == tasklist[x]){
+                        index = x;
+                        break;
+                    }
+                }
+
+                if (index != -1){
+                    tasklist.splice(index, 1);
+                    alert("Removed: " + task)
+                }
+                else{
+                    alert("No such task")
+                }
+            }
+            else{
+                alert("Task list is empty")
+            }
+        }
+        else if (act == "quit"){
+            alert("Quitting TO DO LIST");
+            break;
+        }
+        else{
+            alert("Enter proper option");
+            continue;
+        }
+    }
+</script>
