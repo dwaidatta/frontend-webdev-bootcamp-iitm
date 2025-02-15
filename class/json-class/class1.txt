@@ -1,0 +1,26 @@
+a = `[
+    {
+        "NAME": "A1",
+        "AGE": 19,
+        "level": "Foundation",
+        "Male": true,
+        "shop":["sunlight","moonlight","earth","neptune"],
+        "shop2":["apple","mango","banana","potato",["pepsi","water"]],
+        "shop3":["apple","mango","banana","potato",{"A": "man"}]
+    },
+    {
+        "NAME": "A2",
+        "AGE": 19,
+        "level": "Foundation",
+        "Male": true,
+        "shop":["sunlight","moonlight","earth","neptune"],
+        "shop2":["apple","mango","banana","potato",["pepsi","water"]],
+        "shop3":["apple","mango","banana","potato",{"A": "man"}]
+    }
+]
+`
+'[\n    {\n        "NAME": "A1",\n        "AGE": 19,\n        "level": "Foundation",\n        "Male": true,\n        "shop":["sunlight","moonlight","earth","neptune"],\n        "shop2":["apple","mango","banana","potato",["pepsi","water"]],\n        "shop3":["apple","mango","banana","potato",{"A": "man"}]\n    },\n    {\n        "NAME": "A2",\n        "AGE": 19,\n        "level": "Foundation",\n        "Male": true,\n        "shop":["sunlight","moonlight","earth","neptune"],\n        "shop2":["apple","mango","banana","potato",["pepsi","water"]],\n        "shop3":["apple","mango","banana","potato",{"A": "man"}]\n    }\n]\n'
+b = JSON.parse(a)
+(2) [{…}, {…}]0: {NAME: 'A1', AGE: 19, level: 'Foundation', Male: true, shop: Array(4), …}AGE: 19Male: trueNAME: "A1"level: "Foundation"shop: (4) ['sunlight', 'moonlight', 'earth', 'neptune']shop2: (5) ['apple', 'mango', 'banana', 'potato', Array(2)]shop3: (5) ['apple', 'mango', 'banana', 'potato', {…}][[Prototype]]: Object1: {NAME: 'A2', AGE: 19, level: 'Foundation', Male: true, shop: Array(4), …}AGE: 19Male: trueNAME: "A2"level: "Foundation"shop: (4) ['sunlight', 'moonlight', 'earth', 'neptune']shop2: (5) ['apple', 'mango', 'banana', 'potato', Array(2)]shop3: (5) ['apple', 'mango', 'banana', 'potato', {…}][[Prototype]]: Objectlength: 2[[Prototype]]: Array(0)
+b[0]["shop3"][4]["A"]
+'man'

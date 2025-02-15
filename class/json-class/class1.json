@@ -1,0 +1,20 @@
+[
+    {
+        "NAME": "A1",
+        "AGE": 19,
+        "level": "Foundation",
+        "Male": true,
+        "shop":["sunlight","moonlight","earth","neptune"],
+        "shop2":["apple","mango","banana","potato",["pepsi","water"]],
+        "shop3":["apple","mango","banana","potato",{"A": "man"}]
+    },
+    {
+        "NAME": "A2",
+        "AGE": 19,
+        "level": "Foundation",
+        "Male": true,
+        "shop":["sunlight","moonlight","earth","neptune"],
+        "shop2":["apple","mango","banana","potato",["pepsi","water"]],
+        "shop3":["apple","mango","banana","potato",{"A": "man"}]
+    }
+]
